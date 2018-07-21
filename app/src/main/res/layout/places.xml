@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/image"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:id="@+id/namefeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/image"
+                android:layout_alignTop="@+id/image"
+                android:text="Name: "
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_toRightOf="@+id/namefeed"
+                android:layout_alignTop="@+id/image"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/namefeed"
+                android:layout_toRightOf="@+id/image"
+                android:text="Location: "
+                android:id="@+id/locationfeed"
+                />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_toRightOf="@+id/locationfeed"
+                android:layout_below="@+id/name"/>
+
+            <TextView
+                android:id="@+id/upvotes"
+                android:layout_below="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp" />
+
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/image"
+                android:src="@drawable/share"
+                />
+
+
+            <ImageView
+                android:id="@+id/upanddown"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="5dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/down"
+                />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
